@@ -23,19 +23,6 @@ section h2 {
   margin: 0.75rem;
 }
 
-/* Align Text in center with help of Flex */
-/* .img0, .img8 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.text1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 /* Align Text in center with help of Position */
 .img0, .img8 {
   position: relative;
@@ -49,12 +36,12 @@ section h2 {
 }
 
 .text1 span {
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: "Josefin Sans", sans-serif;
   color: white;
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(0, 0, 0, 0.8); */
   border-radius: 0.5rem;
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
 
 #effect {
@@ -115,11 +102,30 @@ section h2 {
 .img7 {
   background-image: url("../images/w7.jpg");
   height: 600px;
-  background-position-y: -120px;
+  /* background-position-y: -120px; */
 }
 
 .img8 {
   background-image: url("../images/lights.jpg");
   height: 700px;
   opacity: 0.95;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+  .img7 {
+    background-position-y: 0px;
+  }
+
+  .img2 {
+    background-position-y: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #effect {
+    font-size: 3rem;
+    padding: 0.5rem;
+  }
 }
