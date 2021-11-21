@@ -124,6 +124,10 @@ section h2 {
 }
 
 @media screen and (max-width: 500px) {
+  body {
+    min-width: 360px;
+  }
+
   #effect {
     font-size: 3rem;
     padding: 0.5rem;
